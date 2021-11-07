@@ -7,15 +7,15 @@ public class vettore {
 
         int count;
 
-        Scanner sc = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         Vector vector = new Vector<>();
 
         System.out.println("Numero di elementi del vettore: ");
-        count = sc.nextInt();
+        count = in.nextInt();
 
         for (int i = 0; i < count; i++) {
             System.out.print("Posizione nel vettore " + (i + 1) + ": ");
-            vector.add(sc.next());
+            vector.add(in.next());
         }
 
         Iterator iterator = vector.iterator();
@@ -23,6 +23,7 @@ public class vettore {
         System.out.println("Numeri del vettore");
         while (iterator.hasNext()) {
         System.out.println(iterator.next());
+        in.close();
         }
     }
 }
